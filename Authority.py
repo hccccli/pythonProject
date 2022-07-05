@@ -15,8 +15,8 @@ t=5
 def login():
     driver.get('http://ccops-paas.cmecloud.cn/o/ops-portal/#/main/index')
     time.sleep(t)
-    driver.find_element_by_xpath('//*[@id="user"]').send_keys('litong')
-    driver.find_element_by_xpath('//*[@id="password"]').send_keys('Li2mm78!@')
+    driver.find_element_by_xpath('//*[@id="user"]').send_keys('')
+    driver.find_element_by_xpath('//*[@id="password"]').send_keys('')
     driver.find_element_by_xpath('//*[@id="code-btn"]').click()
     code=input('input code')
     driver.find_element_by_xpath('//*[@id="verify_code"]').send_keys(code)
